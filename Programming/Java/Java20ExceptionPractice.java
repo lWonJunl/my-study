@@ -3,6 +3,7 @@ public class Java20ExceptionPractice {
         try {
             String text = "abc";
             int number = Integer.parseInt(text);
+            System.out.println(number);
         } catch(NumberFormatException e) {
             System.out.println("숫자로 변환할 수 없습니다.");
         } finally {
