@@ -8,16 +8,17 @@
 | --- | --- |
 | C | 기본 입출력, 산술 연산, 조건문, 백준 문제 풀이 |
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
-| Java | 기본 문법, 객체 지향, 상속, 다형성, 추상화, 인터페이스, 예외 처리 |
-| Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 동적 목록 |
-| Backend | Node.js 파일·모듈, npm, Express 라우팅과 요청 검증 |
-| AI/Data Analysis | NumPy·pandas를 활용한 데이터 처리와 결측치 분석 |
-| Database | SQL 조회, CRUD, 집계, 서브쿼리, 제약조건, 조인 |
+| Java | 기본 문법, 객체 지향, 컬렉션, 예외 처리 |
+| Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, Fetch API |
+| Backend | Node.js 파일·모듈, npm, Express API와 JSON 요청 처리 |
+| AI/Data Analysis | NumPy·pandas·Matplotlib 기반 데이터 처리와 시각화 |
+| Database | SQL 조회, CRUD, 조인, 서브쿼리, 트랜잭션, 뷰 |
 
 ## 최근 학습
 
-- [Java 예외 처리](Programming/Java/Java19Exception.java): `try-catch-finally`로 산술 예외를 처리했습니다.
-- [SQL 테이블 변경](Database/SQL/17_AlterTable.sql): `ALTER TABLE`로 열을 추가·삭제하고 테이블을 삭제했습니다.
+- [pandas 시각화](AI/DataAnalysis/08_PandasVisualization.py): pandas 데이터를 그래프로 시각화했습니다.
+- [Express 사용자 목록 API](Backend/NodeJS/12_ExpressUserList.js): GET·POST 요청으로 사용자 목록을 조회하고 추가했습니다.
+- [SQL 그룹 집계 복습](Database/SQL/22_GroupByHavingReview.sql): `GROUP BY`와 `HAVING`으로 그룹별 조건을 적용했습니다.
 
 ## 저장소 구조
 
@@ -73,6 +74,10 @@ my-study/
 | `Java17Abstract.java` | 추상 클래스와 추상 메서드 구현하기 |
 | `Java18Interface.java` | 인터페이스를 구현해 공통 동작 정의하기 |
 | `Java19Exception.java` | `try-catch-finally`로 예외 처리하기 |
+| `Java20ExceptionPractice.java` | 여러 예외 상황을 처리하고 예외 흐름 복습하기 |
+| `Java21ArrayList.java` | `ArrayList`에 객체를 추가·조회·삭제하기 |
+| `Java22HashMap.java` | `HashMap`에 키와 값을 저장하고 조회하기 |
+| `Java23HashMapCount.java` | `HashMap`으로 항목별 개수 세기 |
 
 ## Frontend
 
@@ -90,6 +95,9 @@ my-study/
 | `10_profile_card/` | 시맨틱 HTML, Flexbox와 미디어 쿼리를 활용한 반응형 프로필 카드 |
 | `11_status_card/` | 버튼으로 학습 상태를 변경하고 `localStorage`에 저장하는 반응형 상태 카드 |
 | `12_todo_card/` | 입력한 할 일을 DOM 목록에 추가하고 삭제하는 동적 카드 |
+| `13_fetch_api/` | Fetch API로 서버 데이터를 받아 화면에 표시하기 |
+| `14_fetch_post/` | Fetch API로 POST 요청을 보내고 응답 처리하기 |
+| `15_fetch_user_list/` | 사용자 목록 조회·등록 API와 프론트엔드 연결하기 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -107,6 +115,9 @@ my-study/
 | `07_ExpressQuery.js` | 쿼리 문자열 읽기 |
 | `08_ExpressPost.js` | POST 요청과 JSON 본문 처리하기 |
 | `09_ExpressValidation.js` | 요청 데이터 검증과 HTTP 상태 코드 응답하기 |
+| `10_ExpressJson.js` | Express에서 JSON 요청 본문 읽기 |
+| `11_ExpressPostJson.js` | JSON POST 요청 처리와 응답 보내기 |
+| `12_ExpressUserList.js` | 사용자 목록 GET·POST API 만들기 |
 
 ## AI/Data Analysis
 
@@ -116,6 +127,10 @@ my-study/
 | `02_NumPyOperations.py` | NumPy 배열 연산과 집계하기 |
 | `03_PandasBasics.py` | pandas DataFrame과 CSV 데이터 다루기 |
 | `04_PandasMissingValues.py` | 결측치 확인·대체와 조건 필터링하기 |
+| `05_PandasGroupBy.py` | pandas `groupby`로 그룹별 통계 구하기 |
+| `06_PandasMerge.py` | 여러 DataFrame을 `merge`로 결합하기 |
+| `07_MatplotlibBasics.py` | Matplotlib로 기본 그래프 그리기 |
+| `08_PandasVisualization.py` | pandas 데이터를 시각화하기 |
 
 ## Database
 
@@ -138,6 +153,11 @@ my-study/
 | `15_CreateTable.sql` | 테이블 생성과 기본 제약조건 정의하기 |
 | `16_ForeignKey.sql` | 외래 키로 테이블 간 관계 설정하기 |
 | `17_AlterTable.sql` | `ALTER TABLE`로 열과 테이블 구조 변경하기 |
+| `18_Transaction.sql` | 트랜잭션의 시작·커밋·롤백 사용하기 |
+| `19_TransactionReview.sql` | 트랜잭션 처리 흐름 복습하기 |
+| `20_JoinGroupByReview.sql` | 조인 결과를 그룹별로 집계하기 |
+| `21_View.sql` | 조회 결과를 뷰로 저장하고 사용하기 |
+| `22_GroupByHavingReview.sql` | `GROUP BY`와 `HAVING`으로 그룹별 조건 집계하기 |
 
 ## 학습 목표
 
@@ -145,10 +165,10 @@ my-study/
 - 알고리즘 문제 풀이를 통해 문제 해결 능력 기르기
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
 - 시맨틱 마크업과 반응형 CSS를 익히고 DOM 기반의 동적 웹 페이지 구현하기
-- Node.js의 파일 시스템, 모듈, npm 생태계 기초 익히기
-- Express 요청·응답과 입력값 검증으로 간단한 API 만들기
-- NumPy와 pandas로 데이터를 정리하고 결측치 처리하기
-- SQL 서브쿼리와 제약조건, 조인·집계로 데이터 구조와 관계 분석하기
+- Node.js와 Express로 JSON API를 만들고 Fetch로 프론트엔드와 연결하기
+- Java 컬렉션과 예외 처리로 데이터와 오류 흐름 다루기
+- NumPy·pandas·Matplotlib로 데이터를 정리·결합·시각화하기
+- SQL 서브쿼리, 조인, 트랜잭션, 뷰와 집계로 데이터 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
 > 학습 내용이 늘어날 때마다 예제와 문서를 함께 업데이트합니다.
