@@ -12,13 +12,14 @@
 | Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, Fetch API |
 | Backend | Node.js 파일·모듈, npm, Express API와 JSON 요청 처리 |
 | AI/Data Analysis | NumPy·pandas·Matplotlib 기반 데이터 처리와 시각화 |
+| Machine Learning | scikit-learn KNN 분류와 예측 정확도 평가 |
 | Database | SQL 조회, CRUD, 조인, 서브쿼리, 트랜잭션, 뷰 |
 
 ## 최근 학습
 
-- [pandas 시각화](AI/DataAnalysis/08_PandasVisualization.py): pandas 데이터를 그래프로 시각화했습니다.
-- [Express 사용자 목록 API](Backend/NodeJS/12_ExpressUserList.js): GET·POST 요청으로 사용자 목록을 조회하고 추가했습니다.
-- [SQL 그룹 집계 복습](Database/SQL/22_GroupByHavingReview.sql): `GROUP BY`와 `HAVING`으로 그룹별 조건을 적용했습니다.
+- [KNN 분류](AI/MachineLearning/01_KNNClassification.py): KNN 모델을 학습하고 새 데이터 예측과 정확도 평가를 실습했습니다.
+- [Express 사용자 관리](Backend/NodeJS/13_ExpressDeleteUser.js): 사용자 목록 조회·등록·삭제 API를 프론트엔드와 연결했습니다.
+- [Java 컬렉션 복습](Programming/Java/Java25CollectionPractice.java): `HashSet`으로 중복을 제거하고 항목 수를 확인했습니다.
 
 ## 저장소 구조
 
@@ -32,7 +33,8 @@ my-study/
 ├── Backend/
 │   └── NodeJS/     # Node.js 기초 실습
 ├── AI/
-│   └── DataAnalysis/ # NumPy·pandas 데이터 분석
+│   ├── DataAnalysis/ # NumPy·pandas 데이터 분석
+│   └── MachineLearning/ # 머신러닝 기초
 ├── Database/
 │   └── SQL/        # SQL 기초 실습
 └── README.md
@@ -78,6 +80,8 @@ my-study/
 | `Java21ArrayList.java` | `ArrayList`에 객체를 추가·조회·삭제하기 |
 | `Java22HashMap.java` | `HashMap`에 키와 값을 저장하고 조회하기 |
 | `Java23HashMapCount.java` | `HashMap`으로 항목별 개수 세기 |
+| `Java24HashSet.java` | `HashSet`으로 중복을 찾고 고유한 값 관리하기 |
+| `Java25CollectionPractice.java` | `HashSet`으로 중복 이름을 제거하고 인원 수 세기 |
 
 ## Frontend
 
@@ -98,6 +102,7 @@ my-study/
 | `13_fetch_api/` | Fetch API로 서버 데이터를 받아 화면에 표시하기 |
 | `14_fetch_post/` | Fetch API로 POST 요청을 보내고 응답 처리하기 |
 | `15_fetch_user_list/` | 사용자 목록 조회·등록 API와 프론트엔드 연결하기 |
+| `16_fetch_delete_user/` | Fetch API로 사용자를 조회·등록·삭제하기 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -118,6 +123,7 @@ my-study/
 | `10_ExpressJson.js` | Express에서 JSON 요청 본문 읽기 |
 | `11_ExpressPostJson.js` | JSON POST 요청 처리와 응답 보내기 |
 | `12_ExpressUserList.js` | 사용자 목록 GET·POST API 만들기 |
+| `13_ExpressDeleteUser.js` | GET·POST·DELETE로 사용자 목록 조회·등록·삭제하기 |
 
 ## AI/Data Analysis
 
@@ -131,6 +137,12 @@ my-study/
 | `06_PandasMerge.py` | 여러 DataFrame을 `merge`로 결합하기 |
 | `07_MatplotlibBasics.py` | Matplotlib로 기본 그래프 그리기 |
 | `08_PandasVisualization.py` | pandas 데이터를 시각화하기 |
+
+## Machine Learning
+
+| 파일 | 학습 주제 |
+| --- | --- |
+| `01_KNNClassification.py` | scikit-learn KNN 분류 모델 학습, 예측과 정확도 평가하기 |
 
 ## Database
 
@@ -158,6 +170,7 @@ my-study/
 | `20_JoinGroupByReview.sql` | 조인 결과를 그룹별로 집계하기 |
 | `21_View.sql` | 조회 결과를 뷰로 저장하고 사용하기 |
 | `22_GroupByHavingReview.sql` | `GROUP BY`와 `HAVING`으로 그룹별 조건 집계하기 |
+| `23_CaseWhen.sql` | `CASE WHEN`으로 점수별 결과·등급을 분류하고 조건별 인원 집계하기 |
 
 ## 학습 목표
 
@@ -168,6 +181,7 @@ my-study/
 - Node.js와 Express로 JSON API를 만들고 Fetch로 프론트엔드와 연결하기
 - Java 컬렉션과 예외 처리로 데이터와 오류 흐름 다루기
 - NumPy·pandas·Matplotlib로 데이터를 정리·결합·시각화하기
+- 머신러닝 분류 모델을 학습하고 예측 성능 평가하기
 - SQL 서브쿼리, 조인, 트랜잭션, 뷰와 집계로 데이터 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
