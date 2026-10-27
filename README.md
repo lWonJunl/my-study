@@ -10,7 +10,7 @@
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
 | Java | 기본 문법, 객체 지향, 컬렉션, 예외 처리 |
 | Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, Fetch API |
-| Backend | Node.js 파일·모듈, npm, Express API와 JSON 요청 처리 |
+| Backend | Node.js 24 LTS, 파일·모듈, npm, Express API와 JSON 요청 처리 |
 | AI/Data Analysis | NumPy·pandas·Matplotlib 기반 데이터 처리와 시각화 |
 | Machine Learning | scikit-learn KNN 분류와 예측 정확도 평가 |
 | Database | SQL 조회, CRUD, 조인, 서브쿼리, 트랜잭션, 뷰 |
