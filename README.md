@@ -10,16 +10,16 @@
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
 | Java | 기본 문법, 객체 지향, 컬렉션, 예외 처리 |
 | Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, Fetch API |
-| Backend | Node.js 24 LTS, 파일·모듈, npm, Express API와 JSON 요청 처리 |
+| Backend | Node.js 24 LTS, Express CRUD API, 비동기 처리와 오류 응답 |
 | AI/Data Analysis | NumPy·pandas·Matplotlib 기반 데이터 처리와 시각화 |
-| Machine Learning | scikit-learn KNN 분류와 예측 정확도 평가 |
-| Database | SQL 조회, CRUD, 조인, 서브쿼리, 트랜잭션, 뷰 |
+| Machine Learning | scikit-learn KNN 분류, 데이터 분할과 정확도 평가 |
+| Database | SQL 조회, CRUD, 조인, 서브쿼리, CTE, 윈도 함수, 트랜잭션 |
 
 ## 최근 학습
 
-- [KNN 분류](AI/MachineLearning/01_KNNClassification.py): KNN 모델을 학습하고 새 데이터 예측과 정확도 평가를 실습했습니다.
-- [Express 사용자 관리](Backend/NodeJS/13_ExpressDeleteUser.js): 사용자 목록 조회·등록·삭제 API를 프론트엔드와 연결했습니다.
-- [Java 컬렉션 복습](Programming/Java/Java25CollectionPractice.java): `HashSet`으로 중복을 제거하고 항목 수를 확인했습니다.
+- [Express 비동기 사용자 관리](Backend/NodeJS/14_ExpressUpdateUser.js): `async/await`와 오류 처리를 사용해 사용자 CRUD API를 구성했습니다.
+- [비동기 사용자 화면](Frontend/18_async_await_users/index.html): 사용자 CRUD API를 비동기 요청으로 호출하고 로딩·오류 상태를 표시했습니다.
+- [SQL 윈도 함수](Database/SQL/26_WindowFunctions.sql): `ROW_NUMBER`, `RANK`, `DENSE_RANK`로 전체·그룹별 순위를 계산했습니다.
 
 ## 저장소 구조
 
@@ -82,6 +82,8 @@ my-study/
 | `Java23HashMapCount.java` | `HashMap`으로 항목별 개수 세기 |
 | `Java24HashSet.java` | `HashSet`으로 중복을 찾고 고유한 값 관리하기 |
 | `Java25CollectionPractice.java` | `HashSet`으로 중복 이름을 제거하고 인원 수 세기 |
+| `Java26Queue.java` | `Queue`의 선입선출 방식으로 항목 추가·조회·처리하기 |
+| `Java27Deque.java` | `Deque`의 양쪽 끝 조작과 스택처럼 사용하는 방법 익히기 |
 
 ## Frontend
 
@@ -103,6 +105,8 @@ my-study/
 | `14_fetch_post/` | Fetch API로 POST 요청을 보내고 응답 처리하기 |
 | `15_fetch_user_list/` | 사용자 목록 조회·등록 API와 프론트엔드 연결하기 |
 | `16_fetch_delete_user/` | Fetch API로 사용자를 조회·등록·삭제하기 |
+| `17_fetch_update_user/` | Fetch API와 PUT 요청으로 사용자 정보 수정하기 |
+| `18_async_await_users/` | `async/await`로 사용자 CRUD 요청과 로딩·오류 상태 처리하기 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -124,6 +128,7 @@ my-study/
 | `11_ExpressPostJson.js` | JSON POST 요청 처리와 응답 보내기 |
 | `12_ExpressUserList.js` | 사용자 목록 GET·POST API 만들기 |
 | `13_ExpressDeleteUser.js` | GET·POST·DELETE로 사용자 목록 조회·등록·삭제하기 |
+| `14_ExpressUpdateUser.js` | GET·POST·PUT·DELETE 사용자 CRUD와 비동기 오류 처리하기 |
 
 ## AI/Data Analysis
 
@@ -143,6 +148,7 @@ my-study/
 | 파일 | 학습 주제 |
 | --- | --- |
 | `01_KNNClassification.py` | scikit-learn KNN 분류 모델 학습, 예측과 정확도 평가하기 |
+| `02_TrainTestSplit.py` | 데이터를 학습·테스트 세트로 나누고 모델 성능 평가하기 |
 
 ## Database
 
@@ -171,6 +177,9 @@ my-study/
 | `21_View.sql` | 조회 결과를 뷰로 저장하고 사용하기 |
 | `22_GroupByHavingReview.sql` | `GROUP BY`와 `HAVING`으로 그룹별 조건 집계하기 |
 | `23_CaseWhen.sql` | `CASE WHEN`으로 점수별 결과·등급을 분류하고 조건별 인원 집계하기 |
+| `24_Union.sql` | `UNION`과 `UNION ALL`로 여러 조회 결과 결합하기 |
+| `25_CTE.sql` | CTE로 집계 결과를 이름 붙여 후속 쿼리에서 사용하기 |
+| `26_WindowFunctions.sql` | 윈도 함수로 전체·부서별 순위와 동점 순위 계산하기 |
 
 ## 학습 목표
 
